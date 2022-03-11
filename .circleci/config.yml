@@ -5,7 +5,8 @@ orbs:
 
 executors:
   node14: 
-    - image: 'cypress/base:14.17.0'
+    docker:
+      - image: 'cypress/base:14.17.0'
 
 
 
