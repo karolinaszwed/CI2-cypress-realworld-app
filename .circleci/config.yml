@@ -18,3 +18,4 @@ workflows:
           executor: node14
           start: yarn dev
           wait-on: 'http://localhost:3000'
+          store-artifacts: true
