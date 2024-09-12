@@ -9,7 +9,6 @@ executors:
       - image: 'cypress/base:14.17.0'
 
 
-
 workflows:
   e2e-test:
     jobs:
@@ -18,3 +17,4 @@ workflows:
           executor: node14
           start: yarn dev
           wait-on: 'http://localhost:3000'
+          store_artifacts: true
